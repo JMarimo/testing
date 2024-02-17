@@ -15,9 +15,9 @@
   "overrides": [
     {
       "files": ["**/*.test.js"],
-      "plugins": ["jest"],
+      "plugins": ["import"],
       "extends": ["plugin:jest/recommended"],
-      "rules": { "jest/prefer-expect-assertions": "off" }
+      "rules": { "import/prefer-default-export": "error"}
     }
   ]
 }
