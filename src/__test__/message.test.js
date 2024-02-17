@@ -1,4 +1,4 @@
-import { displayValidationMessage } from '../message'
+import { displayValidationMessage } from '../js/message'
 
 test('Должен правильно отображать сообщение', () => {
     const element = document.createElement('div')

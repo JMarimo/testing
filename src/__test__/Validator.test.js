@@ -1,4 +1,4 @@
-import { Validator } from '../Validator'
+import { Validator } from '../js/Validator'
 
 describe('Validator class', () => {
     let validator
@@ -30,11 +30,11 @@ describe('Validator class', () => {
     })
 
     test('getCardType должен вернуть корректный тип карты', () => {
-        expect(validator.getCardType('4111111111111111')).toBe('visa')
+        expect(validator.getCardType('4111111111111111')).toBe('VISA')
         expect(validator.getCardType('5152674556410329')).toBe('mc')
         expect(validator.getCardType('6011111111111117')).toBe('maes')
         expect(validator.getCardType('343116428895577')).toBe('amexp')
-        expect(validator.getCardType('2200700148940686')).toBe('mir')
+        expect(validator.getCardType('2200700148940686')).toBe('MIR')
         expect(validator.getCardType('1234567890123456')).toBe('Unknown')
     })
 

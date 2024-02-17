@@ -17,7 +17,8 @@
       "files": ["**/*.test.js"],
       "plugins": ["import"],
       "extends": ["plugin:jest/recommended"],
-      "rules": { "import/prefer-default-export": "error"}
+      "rules": { "import/prefer-default-export": "error"} 
     }
   ]
 }
+
